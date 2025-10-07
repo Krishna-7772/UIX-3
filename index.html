@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F4C430" />
+    <title>S.U.Y.O.G – Smart User Yielding Organized Growth</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script>
+      window.tailwind = window.tailwind || {};
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              saffron: '#F4C430',
+              peacock: '#1CA9C9',
+              marigold: '#FFD54F',
+              terracotta: '#E07A5F',
+              sandstone: '#D9C6A5',
+              clay: '#C4A484',
+              indigo: '#1F2544',
+              jade: '#00A36C',
+              gold: '#C8A951'
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'ui-sans-serif', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+              serif: ['Merriweather', 'ui-serif', 'Georgia', 'serif']
+            },
+            boxShadow: {
+              glow: '0 0 0 3px rgba(244,196,48,.35)'
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- React + ReactDOM UMD -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <!-- Framer Motion UMD -->
+    <script crossorigin src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.umd.js"></script>
+
+    <!-- Babel Standalone for JSX in the browser -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body class="antialiased bg-ivory text-indigo">
+    <div id="root" class="min-h-screen"></div>
+
+    <noscript>
+      <div style="padding:16px; font-family: sans-serif;">
+        This app requires JavaScript. Please enable it to experience S.U.Y.O.G.
+      </div>
+    </noscript>
+
+    <script type="text/babel" data-presets="env,react" src="./script.js"></script>
+  </body>
+</html>
